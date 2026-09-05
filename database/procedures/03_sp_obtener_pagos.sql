@@ -1,0 +1,15 @@
+USE AsiloDB;
+GO
+
+CREATE PROCEDURE SP_ObtenerPagos
+AS
+BEGIN
+
+    SET NOCOUNT ON;
+
+    SELECT *
+    FROM VW_Pagos
+    ORDER BY FechaPago DESC;
+
+END;
+GO
